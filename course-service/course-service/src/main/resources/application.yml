@@ -1,0 +1,41 @@
+server:
+  port: 9001
+
+spring:
+  documentation:
+    swagger-ui:
+      enabled: true
+  swagger-ui:
+    operationsSorter: method
+#    for spring dev profile
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=dev_db
+    username: dev_user
+    password: dev_password
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    #    for spring prod profile
+    #  datasource:
+    #    url: jdbc:sqlserver://localhost:1433;databaseName=prod_db
+    #      username: prod_user
+    #        password: prod_password
+    #        driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    jpa:
+      hibernate:
+        ddl-auto: update
+      database-platform: org.hibernate.dialect.SQLServer2012Dialect
+      show-sql: true
+
+  application:
+    name: eureka-server
+
+#  server:
+#    port: 8761
+
+  eureka:
+    instance:
+      hostname: localhost
+    client:
+      register-with-eureka: false
+      fetch-registry: false
+
+
