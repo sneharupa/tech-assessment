@@ -83,10 +83,10 @@ public class StudentServiceImpl implements StudentService {
     }
 
 
-//      @Override
-//    public Student deleteStudent(Integer studentId){
-//        return studentRepository.deleteStudentById(studentId);
-//    }
+     @Override
+   public Student deleteStudent(Integer studentId){
+       return studentRepository.deleteStudentById(studentId);
+   }
 
 
 }
