@@ -21,8 +21,8 @@ public interface StudentService  {
      List<Student> getAllStudentsWithSelectedCourses();
 
 
-    //Student deleteStudent(Integer studentId);
+    Student deleteStudent(Integer studentId);
 
 
-//    public List<ResponseTemplateVO> findAll(Student student) ;
+
 }
