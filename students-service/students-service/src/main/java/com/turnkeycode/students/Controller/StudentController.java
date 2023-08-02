@@ -59,9 +59,9 @@ public class StudentController {
 
     //API to delete student//
 
-//    @DeleteMapping("/deleteCourse/{id}")
-//    public Student deleteCourse(@PathVariable("id") Integer studentId){
-//        return  studentServiceImpl.deleteStudent(studentId);
-//    }
+   @DeleteMapping("/deleteCourse/{id}")
+   public Student deleteCourse(@PathVariable("id") Integer studentId){
+       return  studentServiceImpl.deleteStudent(studentId);
+   }
 
 }
